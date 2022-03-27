@@ -1,0 +1,264 @@
+/* html{
+    font-size: 62.5%;
+} */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+}
+.header{
+    position: sticky;
+    top: 0; 
+    background-color: white;
+}
+.navbar{
+    display: flex;
+    gap:4rem;
+  }
+
+#navbarNav{
+    border-radius: 5px;
+}
+
+.custom-nav{
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(230, 81, 27);
+    border-radius: 3px;
+ 
+}
+.nav-item a {
+    color: white !important;
+    padding: 1rem 0px;
+}
+
+/*changing toggler icon*/
+.fa-bars{
+    color: rgb(230, 81, 27);
+    font-size: 40px !important;
+}
+
+.navbar-toggler{
+    border: 0 !important;
+    outline: none !important;
+    padding: initial !important;
+}
+
+
+/*Banner*/
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(228, 226, 226);
+    gap: 5vw;
+}
+.banner__image{
+    flex: 1;
+    padding-left: 10px;
+   
+}
+.banner__image img{
+    padding-left:10vw;
+    min-width: 20vw;
+    
+}
+.banner__heading{
+    flex:1;
+    font-family:Georgia, 'Times New Roman', Times, serif
+    
+}
+.banner__heading--line{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.banner__heading--line h2{
+    color:rgb(100, 96, 96);
+    font-size: 3rem;
+}
+.banner__heading h1{
+    font-size: 4rem;
+}
+
+.large__text{
+    font-size: 4rem;
+    color: black;
+}
+
+.small__text{
+    font-size: 3rem;
+    color: rgb(100, 96, 96);
+}
+
+/*foods*/
+.foods{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    gap: 10px;
+}
+
+.foods__item{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 32vw;
+    
+}
+
+.foods__item:nth-child(1){
+    background-color:rgb(243, 148, 59) ;
+}
+
+.foods__item:nth-child(2){
+    background-color:rgb(59, 206, 243) ;
+}
+
+.foods__item:nth-child(3){
+    background-color:rgb(49, 161, 34) ;
+}
+
+.foods__item--img{
+    padding: 1.5rem 0px;
+}
+
+.foods__item img{
+    border-radius: 50%;
+    height: 20vh;
+}
+
+.foods__description{
+    font-weight: bold;
+    color: white;
+} 
+
+/*Adoption*/
+
+.adoption{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 0 1rem;
+}
+
+.adoption__description{
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+
+.adoption__description--heading{
+    color:rgb(59, 206, 243);
+}
+.adoption__description button{
+    border-radius: 5px;
+    background-color: rgb(236, 121, 78);
+    color: white;
+    border: none;
+    padding: 10px;
+}
+
+.adoption__image{
+    flex: 1;
+}
+
+
+/*Contact*/
+.contact{
+    margin-top: 20px;
+    background-color:rgb(245, 240, 240);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contact__description{
+    display: flex;
+    gap: 10vw;
+}
+
+.contact__description--item:nth-child(1){
+    display: flex;
+    flex-direction: column;
+}
+
+/*Footer*/
+
+.footer{
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(235, 106, 60);
+}
+.footer p{
+    margin-bottom: 0;
+}
+
+
+/*for tablet*/
+
+
+/*for mobile*/
+@media (max-width: 576px) {
+    nav{
+        margin: 0;
+    }
+    .navbar{
+        gap:1rem;
+        padding-bottom: 0 !important;
+    }
+    .navbar ul{
+        background-color:rgb(228, 226, 226) ;
+        margin: 0;
+    }
+
+    .navbar ul li a{
+        color: black !important;
+    }
+    .banner{
+        display: none;
+    }
+
+    .foods{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .foods__item{
+        width: 90%;
+       
+    }
+
+    .adoption{
+        flex-direction: column;
+        padding-top: 2rem;
+    }
+
+    .adoption__description{
+        text-align: center;
+    }
+    .contact__description{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1vh;
+    }
+    .contact__description--item:nth-child(1){
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
