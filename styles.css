@@ -1,25 +1,28 @@
-/* html{
-    font-size: 62.5%;
-} */
+
 *{
     margin: 0;
     padding: 0;
 }
-body{
-    margin: 0;
-}
+
 .header{
     position: sticky;
     top: 0; 
     background-color: white;
 }
+.navbar-brand{
+    padding: 0 !important;
+}
+ .navbar-brand img{
+    height: 4rem;
+} 
 .navbar{
+    padding: 1rem !important;
     display: flex;
     gap:4rem;
   }
 
 #navbarNav{
-    border-radius: 5px;
+ border-radius: 3px;
 }
 
 .custom-nav{
@@ -54,16 +57,16 @@ body{
     align-items: center;
     justify-content: space-around;
     background-color: rgb(228, 226, 226);
-    gap: 5vw;
+    gap: 3vw;
 }
 .banner__image{
     flex: 1;
-    padding-left: 10px;
-   
+    padding-left:4rem;
 }
 .banner__image img{
-    padding-left:10vw;
-    min-width: 20vw;
+   
+    width: 35vw;
+    min-width: 300px;
     
 }
 .banner__heading{
@@ -74,42 +77,32 @@ body{
 .banner__heading--line{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 1rem;
 }
 
 .banner__heading--line h2{
     color:rgb(100, 96, 96);
-    font-size: 3rem;
+    font-size: 4rem;
 }
 .banner__heading h1{
-    font-size: 4rem;
+    font-size: 5rem;
 }
 
-.large__text{
-    font-size: 4rem;
-    color: black;
-}
-
-.small__text{
-    font-size: 3rem;
-    color: rgb(100, 96, 96);
-}
 
 /*foods*/
 .foods{
-    margin-top: 20px;
+    margin: 1.5rem 0;
     display: flex;
     justify-content: space-between;
     padding: 0 1rem;
-    gap: 10px;
+    gap: 1rem;
 }
 
 .foods__item{
-    background-color: aqua;
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 32vw;
+    flex: 1;
     
 }
 
@@ -131,7 +124,8 @@ body{
 
 .foods__item img{
     border-radius: 50%;
-    height: 20vh;
+    width: 25vw;
+    max-width: 250px;
 }
 
 .foods__description{
@@ -144,7 +138,7 @@ body{
 .adoption{
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
     padding: 0 1rem;
 }
 
@@ -172,6 +166,12 @@ body{
     flex: 1;
 }
 
+.adoption__image img{
+    width: 35vw;
+    min-width: 275px;
+    max-width: 450px;
+}
+
 
 /*Contact*/
 .contact{
@@ -180,9 +180,15 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
 }
 
+.contact__image{
+    padding: 2rem 0;
+}
+
+.contact__image img{
+    height: 4rem;
+}
 .contact__description{
     display: flex;
     gap: 10vw;
@@ -206,7 +212,27 @@ body{
 
 
 /*for tablet*/
+@media (min-width:577px) and (max-width:992px) {
 
+    html{
+        font-size: 62.5%;
+    }
+
+    .navbar ul li a{
+        font-size: 1.2rem;
+    }
+
+    .banner__heading--line h1{
+        font-size: 4rem;
+    }
+    .banner__heading--line h2{
+        font-size: 3rem;
+    }
+
+    .adoption__description p{
+        font-size: 1.4rem;
+    }
+}
 
 /*for mobile*/
 @media (max-width: 576px) {
@@ -215,15 +241,32 @@ body{
     }
     .navbar{
         gap:1rem;
-        padding-bottom: 0 !important;
+        padding: 1rem 0 0 0 !important;
+    }
+    .navbar-brand{
+        padding-left: 1rem !important;
+    }
+    .navbar-toggler{
+        padding-right: 1rem !important;
     }
     .navbar ul{
         background-color:rgb(228, 226, 226) ;
         margin: 0;
     }
 
+    .active{
+        background-color: rgb(230, 81, 27);
+    }
+
     .navbar ul li a{
         color: black !important;
+    }
+
+    .nav-item:nth-child(3){
+        display: none;
+    }
+    .nav-item:nth-child(5){
+        display: none;
     }
     .banner{
         display: none;
@@ -238,12 +281,16 @@ body{
         width: 90%;
        
     }
+    .foods__item img{
+        border-radius: 50%;
+        height: 20vh;
+        width: auto;
+    }
 
     .adoption{
         flex-direction: column;
-        padding-top: 2rem;
+        padding-top: 1rem;
     }
-
     .adoption__description{
         text-align: center;
     }
