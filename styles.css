@@ -262,12 +262,12 @@
         color: black !important;
     }
 
-    .nav-item:nth-child(3){
+    /* .nav-item:nth-child(3){
         display: none;
     }
     .nav-item:nth-child(5){
         display: none;
-    }
+    } */
     .banner{
         display: none;
     }
