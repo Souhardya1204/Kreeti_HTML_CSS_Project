@@ -232,6 +232,14 @@
     .adoption__description p{
         font-size: 1.4rem;
     }
+
+    .contact__description{
+        font-size: 1.2rem;
+    }
+
+    .footer{
+        font-size: 1.2rem;
+    }
 }
 
 /*for mobile*/
