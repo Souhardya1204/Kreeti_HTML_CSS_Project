@@ -1,50 +1,53 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-.header{
+.header {
     position: sticky;
-    top: 0; 
+    top: 0;
     background-color: white;
 }
-.navbar-brand{
+
+.navbar-brand {
     padding: 0 !important;
 }
- .navbar-brand img{
-    height: 4rem;
-} 
-.navbar{
-    padding: 1rem !important;
-    display: flex;
-    gap:4rem;
-  }
 
-#navbarNav{
- border-radius: 3px;
+.navbar-brand img {
+    height: 4rem;
 }
 
-.custom-nav{
+.navbar {
+    padding: 1rem !important;
+    display: flex;
+    gap: 4rem;
+}
+
+#navbarNav {
+    border-radius: 3px;
+}
+
+.custom-nav {
     flex: 1;
     display: flex;
     justify-content: space-evenly;
     background-color: rgb(230, 81, 27);
     border-radius: 3px;
- 
+
 }
+
 .nav-item a {
     color: white !important;
     padding: 1rem 0px;
 }
 
 /*changing toggler icon*/
-.fa-bars{
+.fa-bars {
     color: rgb(230, 81, 27);
     font-size: 40px !important;
 }
 
-.navbar-toggler{
+.navbar-toggler {
     border: 0 !important;
     outline: none !important;
     padding: initial !important;
@@ -52,45 +55,49 @@
 
 
 /*Banner*/
-.banner{
+.banner {
     display: flex;
     align-items: center;
     justify-content: space-around;
     background-color: rgb(228, 226, 226);
     gap: 3vw;
 }
-.banner__image{
+
+.banner__image {
     flex: 1;
-    padding-left:4rem;
+    padding-left: 4rem;
 }
-.banner__image img{
-   
+
+.banner__image img {
+
     width: 35vw;
     min-width: 300px;
-    
+
 }
-.banner__heading{
-    flex:1;
-    font-family:Georgia, 'Times New Roman', Times, serif
-    
+
+.banner__heading {
+    flex: 1;
+    font-family: Georgia, 'Times New Roman', Times, serif
 }
-.banner__heading--line{
+
+.banner__heading--line {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
-.banner__heading--line h2{
-    color:rgb(100, 96, 96);
+.banner__heading--line h2 {
+    color: rgb(100, 96, 96);
     font-size: 4rem;
 }
-.banner__heading h1{
+
+.banner__heading h1 {
     font-size: 5rem;
 }
 
 
 /*foods*/
-.foods{
+.foods {
     margin: 1.5rem 0;
     display: flex;
     justify-content: space-between;
@@ -98,51 +105,51 @@
     gap: 1rem;
 }
 
-.foods__item{
+.foods__item {
     display: flex;
     flex-direction: column;
     text-align: center;
     flex: 1;
-    
+
 }
 
-.foods__item:nth-child(1){
-    background-color:rgb(243, 148, 59) ;
+.foods__item:nth-child(1) {
+    background-color: rgb(243, 148, 59);
 }
 
-.foods__item:nth-child(2){
-    background-color:rgb(59, 206, 243) ;
+.foods__item:nth-child(2) {
+    background-color: rgb(59, 206, 243);
 }
 
-.foods__item:nth-child(3){
-    background-color:rgb(49, 161, 34) ;
+.foods__item:nth-child(3) {
+    background-color: rgb(49, 161, 34);
 }
 
-.foods__item--img{
+.foods__item--img {
     padding: 1.5rem 0px;
 }
 
-.foods__item img{
+.foods__item img {
     border-radius: 50%;
     width: 25vw;
     max-width: 250px;
 }
 
-.foods__description{
+.foods__description {
     font-weight: bold;
     color: white;
-} 
+}
 
 /*Adoption*/
 
-.adoption{
+.adoption {
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
     padding: 0 1rem;
 }
 
-.adoption__description{
+.adoption__description {
     flex: 1.5;
     display: flex;
     flex-direction: column;
@@ -151,10 +158,11 @@
 }
 
 
-.adoption__description--heading{
-    color:rgb(59, 206, 243);
+.adoption__description--heading {
+    color: rgb(59, 206, 243);
 }
-.adoption__description button{
+
+.adoption__description button {
     border-radius: 5px;
     background-color: rgb(236, 121, 78);
     color: white;
@@ -162,11 +170,11 @@
     padding: 10px;
 }
 
-.adoption__image{
+.adoption__image {
     flex: 1;
 }
 
-.adoption__image img{
+.adoption__image img {
     width: 35vw;
     min-width: 275px;
     max-width: 450px;
@@ -174,39 +182,41 @@
 
 
 /*Contact*/
-.contact{
+.contact {
     margin-top: 20px;
-    background-color:rgb(245, 240, 240);
+    background-color: rgb(245, 240, 240);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.contact__image{
+.contact__image {
     padding: 2rem 0;
 }
 
-.contact__image img{
+.contact__image img {
     height: 4rem;
 }
-.contact__description{
+
+.contact__description {
     display: flex;
     gap: 10vw;
 }
 
-.contact__description--item:nth-child(1){
+.contact__description--item:nth-child(1) {
     display: flex;
     flex-direction: column;
 }
 
 /*Footer*/
 
-.footer{
+.footer {
     text-align: center;
     padding: 10px;
     background-color: rgb(235, 106, 60);
 }
-.footer p{
+
+.footer p {
     margin-bottom: 0;
 }
 
@@ -214,100 +224,107 @@
 /*for tablet*/
 @media (min-width:577px) and (max-width:992px) {
 
-    html{
+    html {
         font-size: 62.5%;
     }
 
-    .navbar ul li a{
+    .navbar ul li a {
         font-size: 1.2rem;
     }
 
-    .banner__heading--line h1{
+    .banner__heading--line h1 {
         font-size: 4rem;
     }
-    .banner__heading--line h2{
+
+    .banner__heading--line h2 {
         font-size: 3rem;
     }
 
-    .adoption__description p{
+    .adoption__description p {
         font-size: 1.4rem;
     }
 
-    .contact__description{
+    .contact__description {
         font-size: 1.2rem;
     }
 
-    .footer{
+    .footer {
         font-size: 1.2rem;
     }
 }
 
 /*for mobile*/
 @media (max-width: 576px) {
-    nav{
-        margin: 0;
-    }
-    .navbar{
-        gap:1rem;
-        padding: 1rem 0 0 0 !important;
-    }
-    .navbar-brand{
-        padding-left: 1rem !important;
-    }
-    .navbar-toggler{
-        padding-right: 1rem !important;
-    }
-    .navbar ul{
-        background-color:rgb(228, 226, 226) ;
+    nav {
         margin: 0;
     }
 
-    .active{
+    .navbar {
+        gap: 1rem;
+        padding: 1rem 0 0 0 !important;
+    }
+
+    .navbar-brand {
+        padding-left: 1rem !important;
+    }
+
+    .navbar-toggler {
+        padding-right: 1rem !important;
+    }
+
+    .navbar ul {
+        background-color: rgb(228, 226, 226);
+        margin: 0;
+    }
+
+    .active {
         background-color: rgb(230, 81, 27);
     }
 
-    .navbar ul li a{
+    .navbar ul li a {
         color: black !important;
     }
 
-    .banner{
+    .banner {
         display: none;
     }
 
-    .foods{
+    .foods {
         flex-direction: column;
         align-items: center;
         gap: 20px;
     }
-    .foods__item{
+
+    .foods__item {
         width: 90%;
-       
+
     }
-    .foods__item img{
+
+    .foods__item img {
         border-radius: 50%;
         height: 20vh;
         width: auto;
     }
 
-    .adoption{
+    .adoption {
         flex-direction: column;
         padding-top: 1rem;
     }
-    .adoption__description{
+
+    .adoption__description {
         text-align: center;
     }
-    .contact__description{
+
+    .contact__description {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 1vh;
     }
-    .contact__description--item:nth-child(1){
+
+    .contact__description--item:nth-child(1) {
         flex-direction: row;
         justify-content: center;
         align-items: center;
     }
 }
-
-
-
