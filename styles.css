@@ -9,6 +9,11 @@
     background-color: white;
 }
 
+.container-fluid {
+    padding: 0;
+
+}
+
 .navbar-brand {
     padding: 0 !important;
 }
@@ -20,7 +25,7 @@
 .navbar {
     padding: 1rem !important;
     display: flex;
-    gap: 4rem;
+    gap: 3vw;
 }
 
 #navbarNav {
@@ -77,22 +82,26 @@
 
 .banner__heading {
     flex: 1;
-    font-family: Georgia, 'Times New Roman', Times, serif
-}
-
-.banner__heading--line {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
-    align-items: center;
-    gap: 1rem;
+    flex-direction: column;
+    justify-content: flex-start;
+
 }
 
-.banner__heading--line h2 {
+.line {
+    margin: 0;
+    margin-top: -2rem;
+}
+
+.small-font {
+    font-size: max(27px, 4vw);
     color: rgb(100, 96, 96);
-    font-size: 4rem;
+    padding-right: 1vw;
 }
 
-.banner__heading h1 {
-    font-size: 5rem;
+.large-font {
+    font-size: max(35px, 5vw);
 }
 
 
@@ -140,6 +149,12 @@
     color: white;
 }
 
+.foods__description--heading {
+    font-size: 2rem;
+    margin-bottom: 1vw;
+}
+
+
 /*Adoption*/
 
 .adoption {
@@ -153,12 +168,12 @@
     flex: 1.5;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1vw;
 
 }
 
-
-.adoption__description--heading {
+.adoption__description--heading p {
+    font-size: 2.5rem;
     color: rgb(59, 206, 243);
 }
 
@@ -214,6 +229,7 @@
     text-align: center;
     padding: 10px;
     background-color: rgb(235, 106, 60);
+    color: white;
 }
 
 .footer p {
@@ -223,33 +239,41 @@
 
 /*for tablet*/
 @media (min-width:577px) and (max-width:992px) {
-
-    html {
-        font-size: 62.5%;
-    }
-
     .navbar ul li a {
-        font-size: 1.2rem;
+        font-size: 0.8rem;
     }
 
-    .banner__heading--line h1 {
-        font-size: 4rem;
+    .line {
+        margin-top: -1rem;
     }
 
-    .banner__heading--line h2 {
-        font-size: 3rem;
+    .foods__description--heading {
+        font-size: 1.5rem;
+        margin-bottom: 1vw;
     }
 
-    .adoption__description p {
-        font-size: 1.4rem;
+    .foods__description--text {
+        font-size: 0.7rem;
+    }
+
+    .adoption__description--heading p {
+        font-size: 1.5rem;
+    }
+
+    .adoption__description--text {
+        font-size: 0.8rem;
+    }
+
+    .adoption .button {
+        font-size: 0.8rem;
     }
 
     .contact__description {
-        font-size: 1.2rem;
+        font-size: 0.8rem;
     }
 
     .footer {
-        font-size: 1.2rem;
+        font-size: 0.8rem;
     }
 }
 
@@ -257,6 +281,11 @@
 @media (max-width: 576px) {
     nav {
         margin: 0;
+    }
+
+    .custom-nav {
+        position: absolute;
+        width: 100%;
     }
 
     .navbar {
